@@ -9,9 +9,16 @@ import Morning from "./assets/morning.png";
 import Afternoon from "./assets/afternoon.png";
 import Night from "./assets/night.png";
 
-const hours = new Date().getHours();
+const hours: number = new Date().getHours();
 
-const updateStatus = () => {
+type Status = {
+  img: string;
+  status: string;
+  obs: string;
+  bg: string;
+};
+
+const updateStatus = (): Status => {
   if (hours >= 5 && hours < 12) {
     return {
       img: Morning,

@@ -49,7 +49,7 @@ createRoot(document.querySelector("body")!).render(
       
       </header>
 
-      <article className="bg-white rounded-lg p-4 gap-3 flex justify-center items-center flex-col">
+      <article className="bg-white rounded-lg p-4 gap-3 flex justify-center items-center flex-col w-full max-w-87.5">
 
         <h2 className="font-bold">Hi, it's {hours} o'clock now</h2>
 
